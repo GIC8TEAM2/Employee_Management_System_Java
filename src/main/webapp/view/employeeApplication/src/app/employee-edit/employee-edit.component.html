@@ -1,0 +1,77 @@
+<div class="html">
+  <div class="card-body">
+    <div style="color: white" align="right">
+      <h4 align="justify" style="color: rgb(9, 240, 47)">
+        <br />
+        <a style="color: green" href="/employeehome" style="float: left;"><button class="btn-float-left">Home</button> </a>
+        <a style="color: green" href="/userLogin" style="float: right;"><button class="btn-float-right">Logout</button> </a>
+      </h4>
+    </div>
+     <div class="form">
+    <form (ngSubmit)="onSubmit()" #EmployeeRegistration="ngForm" ><br><br><br>
+      <label for="employeeid">Employee Id: </label>
+      <input
+        type="number"
+        [(ngModel)]="employee.id"
+        class="form-control"
+        id="employeeid"
+        name="employeeid"
+        placeholder="Enter Id to Update"
+        required
+        #userid="ngModel"
+      /><br><br>
+
+      <div class="form-group" >
+        <label for="employeename">Employee name: </label>
+        <input
+          type="text"
+          [(ngModel)]="employee.name"
+          class="form-control0"
+          id="employeename"
+          name="employeename"
+          placeholder="Enter your name"
+          required
+          #username="ngModel"
+        />
+      </div>
+      <br>
+      <div class="form-group1">
+        <label for="doj">Date Of Joining: </label>
+        <input
+          type="text"
+          [(ngModel)]="employee.dateOfJoining"
+          class="form-control1"
+          id="doj"
+          name="doj"
+          placeholder="date of joining"
+          required
+          #doj="ngModel"
+        />
+      </div><br>
+
+      <div class="form-group2">
+        <label for="basicpay">Basicpay: </label>
+        <input
+          type="text"
+          [(ngModel)]="employee.basicpay"
+          class="form-control2"
+          id="basicpay"
+          name="basicpay"
+          placeholder="Enter your basicpay"
+          required
+          #basicpay="ngModel"
+        />
+      </div><br><br>
+
+      <button
+        type="submit"
+        
+        [disabled]="!EmployeeRegistration.form.valid"
+        class="btn btn-info"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+  </div>
+</div>

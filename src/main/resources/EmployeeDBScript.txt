@@ -1,0 +1,29 @@
+drop table Employee;
+
+create table Employee(
+ID  NUMBER(10)  NOT NULL  ,       
+BASIC_PAY  FLOAT(126)  ,       
+DA         FLOAT(126),         
+DATE_OF_JOINING    VARCHAR2(255 CHAR) ,
+GROSS    FLOAT(126),       
+HRA   FLOAT(126) ,        
+NAME  VARCHAR2(255 CHAR),
+NET   FLOAT(126),  
+TAX    FLOAT(126),
+primary key (ID)
+                 );
+
+insert into Employee(ID,NAME,DATE_OF_JOINING,BASIC_PAY,DA,HRA,GROSS,TAX,NET) values (56,'Priya','2022-05-16',50000,20,1600,10000,0,10000);
+
+insert into Employee(ID,NAME,DATE_OF_JOINING,BASIC_PAY,DA,HRA,GROSS,TAX,NET) values (57,'Pravalika','2022-08-25',55000,20,1600,10000,0,10000);
+
+insert into Employee(ID,NAME,DATE_OF_JOINING,BASIC_PAY,DA,HRA,GROSS,TAX,NET) values (58,'Kushbu','2022-06-05',45000,20,1600,10000,0,10000);
+
+insert into Employee(ID,NAME,DATE_OF_JOINING,BASIC_PAY,DA,HRA,GROSS,TAX,NET) values (59,'Vyshu','2022-04-03',35000,20,1600,10000,0,10000);
+
+insert into Employee(ID,NAME,DATE_OF_JOINING,BASIC_PAY,DA,HRA,GROSS,TAX,NET) values (60,'Divya','2022-03-06',41000,20,1600,10000,0,10000);
+
+insert into Employee(ID,NAME,DATE_OF_JOINING,BASIC_PAY,DA,HRA,GROSS,TAX,NET) values (61,'Tom','2022-02-15',98000,20,1600,10000,0,10000);
+
+
+commit;

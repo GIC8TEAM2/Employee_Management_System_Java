@@ -1,0 +1,66 @@
+.html {
+  height: 600px;
+  background-size: 100% 100%;
+  background-color: rgb(85, 74, 74);
+  background-repeat: no-repeat;
+  background-image: url("https://d317jr06u12xtj.cloudfront.net/2021/03/Google_Page_Experience_thumb.png");
+}
+.form{
+  text-align: center;
+  height:350px;
+  width:400px;
+  margin-top: 6%;
+  margin-left: 35%;
+  background-color:#b0f0f2;
+}
+.form-control {
+  background-color: white;
+  border: 2px solid #42f4ce;
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 12px;
+}
+
+.form-control:hover {
+  background-color: #42f4ce;
+  color: red;
+}
+
+.form-control1 {
+  background-color: white;
+  border: 2px solid #b0f0f2;
+  border: radius 5px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.form-control1:hover {
+  background-color: #42f4ce;
+  color: red;
+}
+
+.form-control2 {
+  background-color: white;
+  border: 2px solid #ead2f2;
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  margin-left: 30px;
+}
+
+.form-control2:hover {
+  background-color: #286456;
+  color: red;
+}
+.form-control0{
+  background-color: white;
+  border: 2px solid #42f4ce;
+  border-radius: 5px;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+}

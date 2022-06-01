@@ -1,0 +1,29 @@
+ drop table "user" ;
+
+create table "user"(
+    userid varchar2(255) not null,
+    address varchar2(255),
+    email varchar2(255),
+    first varchar2(255),
+    last varchar2(255),
+    password varchar2(255),
+    phone number(19),
+    primary key (userid)
+);
+ 
+INSERT INTO "user"(userid,first,last,email,phone,password,address)
+VALUES('01','khush','khush','khush@gmail.com',7896541230,'000','hyd');
+ 
+INSERT INTO "user"(userid,first,last,email,phone,password,address)
+VALUES('Pravalika','Pravalika','Chotu','chotu@gmail.com',1234878956,'159','Warangal');
+
+INSERT INTO "user"(userid,first,last,email,phone,password,address)
+VALUES('vyshu','vyshu','Kamana','Av@gmail.com',4563219043,'0123','Karnool');
+
+INSERT INTO "user"(userid,first,last,email,phone,password,address)
+VALUES('Prasanthi','Gnanaprasanthi','Patibandala','prassu@gmail.com',8781298956,'614','Nellore');
+
+INSERT INTO "user"(userid,first,last,email,phone,password,address)
+VALUES('Divi','Dhivya','J','dj@gmail.com',8789093456,'dj','Chennai');
+
+commit;
